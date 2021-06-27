@@ -3,25 +3,34 @@
         #logo {
             display: block;
             margin-left: auto;
-            margin-right: auto;            
+            margin-right: auto;
+            padding-bottom: 20px;           
         }
         #search-form {
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 500px;
+            width: 600px;
             height: 40px;;
             border-radius: 20px;
+            border-color: rgba(211, 211, 211, 0.664);
+            border-width: 1px;
+            background: url(images/search.png) no-repeat scroll 10px 10px;
+            background-size: 20px;
+            padding-left: 35px
         }
         #submit-buttons-container {            
+            padding-top: 15px;
             display: flex;
             justify-content: center;            
         }
-        .submit-button {
-            padding: 0;
+        button {
+            background-color: rgb(243, 243, 245);
             border: none;
-            background-color: rgb(240, 233, 233);
+            padding: 8px;
+            border-radius: 3px;
         }
+        
     </style>
 </head>
 <body>
@@ -31,9 +40,9 @@
     <div>
         <img id="logo" src="images/googlelogo.png" alt="The word Google in multicolored letters" />
     </div>
-    <div>
+    <div>        
         <form>
-            <input id="search-form" type="text" />
+            <input id="search-form" type="search" />
         </form>
     </div>
     <div id="submit-buttons-container">
