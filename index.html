@@ -3,7 +3,7 @@
         #navbar {
             list-style-type: none;
             margin: 0;
-            padding: 0;                        
+            padding: 0;                               
         }
         #navbar ul {
             position: fixed;
@@ -12,13 +12,21 @@
         }
         #navbar li {
             font-size: 15px;
+            display: inline;            
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;            
+        }
+        .navbar-float-right {
+            float: right;
+            font-size: 15px;
             display: inline;
             padding-left: 10px;
             padding-right: 10px;
             padding-top: 10px;
         }
-        .navbar-float-right {
-            float: right;
+        .navbar-float-left {
+            float: left;
             font-size: 15px;
             display: inline;
             padding-left: 10px;
@@ -31,8 +39,7 @@
         #navbar a {
             text-decoration: none;
             color: black;
-            font-family: Arial, Helvetica, sans-serif;
-               
+            font-family: Arial, Helvetica, sans-serif;                           
         }
         #navbar button {
             background-color: rgb(65, 65, 236);
@@ -73,15 +80,14 @@
             border: none;
             padding: 8px;
             border-radius: 3px;
-        }
-        
+        }        
     </style>
 </head>
 <body>
     <div>
         <ul id="navbar">
-            <li><a href="">About</a></li>
-            <li><a href="">Store</a></li>
+            <li><a class="navbar-float-left" href="">About</a></li>
+            <li><a class="navbar-float-left" href="">Store</a></li>
             <li><button class="navbar-float-right">Sign in</button></li>
             <li><img class="navbar-float-right" src="images/apps-icon.png" height="25px" width="25px" style="padding-top: 5px; padding-right: 20px"/></li>
             <li><a class="navbar-float-right" href="">Images</a></li>
