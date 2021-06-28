@@ -5,8 +5,28 @@
             margin: 0;
             padding: 0;                        
         }
+        #navbar ul {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
         #navbar li {
+            font-size: 15px;
             display: inline;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+        }
+        .navbar-float-right {
+            float: right;
+            font-size: 15px;
+            display: inline;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+        }
+        #navbar a:hover {
+            text-decoration: underline;
         }
         #navbar a {
             text-decoration: none;
@@ -18,12 +38,17 @@
             background-color: rgb(65, 65, 236);
             color: white;
             width: 100px;
+            height: 40px;
+            display: table-cell;
+            vertical-align: middle;
+            padding: 0px;           
         }
         #logo {
             display: block;
             margin-left: auto;
             margin-right: auto;
-            padding-bottom: 20px;           
+            padding-bottom: 20px;
+            padding-top: 100px;
         }
         #search-form {
             display: block;
@@ -57,14 +82,16 @@
         <ul id="navbar">
             <li><a href="">About</a></li>
             <li><a href="">Store</a></li>
-            <li><a href="">Gmail</a></li>
-            <li><a href="">Images</a></li>
-            <li><img src="images/apps-icon.png" height="25px" width="25px"/></li>
-            <li><button>Sign in</button></li>
+            <li><button class="navbar-float-right">Sign in</button></li>
+            <li><img class="navbar-float-right" src="images/apps-icon.png" height="25px" width="25px" style="padding-top: 5px; padding-right: 20px"/></li>
+            <li><a class="navbar-float-right" href="">Images</a></li>
+            <li><a class="navbar-float-right" href="">Gmail</a></li>
         </ul>
 
     </div>
     <div>
+        <br>
+        <br>
         <img id="logo" src="images/googlelogo.png" alt="The word Google in multicolored letters" />
     </div>
     <div>        
